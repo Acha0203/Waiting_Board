@@ -1,0 +1,13 @@
+.bg-gradient {
+  height: 20vh;
+  width: 100vw;
+  background-image: linear-gradient(to bottom, #accbee 10%, #e7f0fd 35%, #fff 70%);
+}
+
+.new-tegomin {
+  font-family: 'New Tegomin', serif;
+}
+
+.t-shadow {
+  text-shadow: 0 0 10px #fff;
+}

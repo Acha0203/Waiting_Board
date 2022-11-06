@@ -24,6 +24,7 @@ module.exports = {
   ],
   rules: {
     'import/prefer-default-export': 'off',
+    'react/function-component-definition': [2, { namedComponents: 'arrow-function' }],
     '@typescript-eslint/quotes': ['error', 'single'],
     '@typescript-eslint/consistent-type-assertions': [
       'error',
