@@ -1,5 +1,5 @@
 import React, { FC, memo } from 'react';
-import BoardHeader from '../atoms/BoardHeader';
+import BoardHeader from '../molecules/BoardHeader';
 import BoardBody from '../molecules/BoardBody';
 
 const Board: FC = memo(() => (
