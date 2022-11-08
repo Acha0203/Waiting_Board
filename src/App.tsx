@@ -1,10 +1,23 @@
 import React from 'react';
-import Layout from './components/templates/Layout';
+import styled, { ThemeProvider } from 'styled-components';
+import { theme } from './assets/theme/theme';
+import MainPage from './components/pages/MainPage';
+
+const SWrapper = styled.div`
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+`;
 
 const App = () => (
-  <div className="App w-screen h-screen flex flex-col justify-start items-center">
-    <Layout />
-  </div>
+  <ThemeProvider theme={theme}>
+    <SWrapper>
+      <MainPage />
+    </SWrapper>
+  </ThemeProvider>
 );
 
 export default App;
