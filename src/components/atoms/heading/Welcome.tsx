@@ -1,7 +1,13 @@
 import React, { FC, memo } from 'react';
+import styled from 'styled-components';
 
-const Welcome: FC = memo(() => (
-  <h1 className="new-tegomin t-shadow text-3xl sm:text-5xl text-teal-600 pt-5">いらっしゃいませ</h1>
-));
+const SWelcome = styled.h1`
+  font-family: 'New Tegomin', serif;
+  text-shadow: 0 0 10px #fff;
+  padding-top: 20px;
+  color: #008080;
+`;
+
+const Welcome: FC = memo(() => <SWelcome>いらっしゃいませ</SWelcome>);
 
 export default Welcome;

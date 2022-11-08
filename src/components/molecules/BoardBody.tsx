@@ -1,9 +1,20 @@
 import React, { FC, memo } from 'react';
+import styled from 'styled-components';
+
+const SWrapper = styled.div`
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+`;
 
 const BoardBody: FC = memo(() => (
-  <div className="board-body-wrapper flex flex-col justify-start items-center bg-white">
+  <SWrapper>
     <button type="button">temp</button>
-  </div>
+  </SWrapper>
 ));
 
 export default BoardBody;
